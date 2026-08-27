@@ -36,6 +36,17 @@ alta disponibilidade via distribuição multi-AZ.
 O workshop usa uma route table única para as privadas; o ideal em
 produção seria uma por AZ (rota para o NAT da própria zona).
 
+## Trade-off arquitetural
+
+O workshop cria uma única route table para as subnets privadas, apontando 
+para um único NAT Gateway. Em produção, o padrão de referência AWS seria:
+
+- Route table privada 1a → NAT Gateway 1a
+- Route table privada 1b → NAT Gateway 1b
+
+Isso elimina dependência cross-AZ e remove o ponto único de falha. 
+Mas no contexto deste lab, a abordagem simplificada é suficiente.
+
 ## Se eu refizesse
 Planejaria o CIDR pensando em peering/VPN futuros (sobreposição com
 on-premise é um erro clássico) e criaria as route tables privadas por AZ.
