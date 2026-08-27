@@ -13,7 +13,8 @@ acesso ao **S3** via **VPC Endpoint** e administração via **SSM** (sem SSH).
 Internet → IGW → ALB (pública) → EC2 (privada) → NAT GW / VPC Endpoint (S3)
 
 ## 📖 Documentação passo a passo
-1. [Networking (VPC)](docs/01-networking-vpc.md) ... (demais módulos)
+1. [Networking (VPC)](docs/01-networking-vpc.md)
+2. [Security Secret (SGs)](docs/02-security-groups.md)
 
 ## 💰 Custo
 ~US$ 0,44/hora. Cleanup completo em [09-cleanup-checklist.md](docs/09-cleanup-checklist.md).
