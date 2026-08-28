@@ -35,12 +35,12 @@ EC2 → NAT Gateway (saída) · EC2 → VPC Endpoint → S3
 ## 📖 Documentação por módulo
 1. [Networking (VPC)](docs/01-networking-vpc.md)
 2. [Security Groups](docs/02-security-groups.md)
-3. [IAM](docs/03-access-management-iam.md)
-4. [EC2](docs/04-Deploy-Compute-ec2.md)
-5. [SSM](docs/05-Administer-Web-Server-SSM.md)
-6. [ALB](docs/06-Load-Balancing-ALB.md)
+3. [IAM](docs/03-iam.md)
+4. [EC2](docs/04-ec2.md)
+5. [SSM](docs/05-ssm.md)
+6. [ALB](docs/06-alb.md)
 7. [S3](docs/07-s3.md)
-8. [ASG — challenge](docs/08-asg.md)
+8. [ASG](docs/08-asg.md)
 
 ## 🐛 Troubleshooting real (o que tutorial não mostra)
 - **#1** Route table privada sem rota para o NAT (mód. 01);
